@@ -1,0 +1,256 @@
+[
+    {
+        "name": "Electronics",
+        "image": "https://2.imimg.com/data2/UP/MK/MY-3812101/electronics.jpg",
+        "subcategories": [
+            {
+                "name": "Mobiles",
+                "image":"https://5.imimg.com/data5/SELLER/Default/2021/9/HR/PW/SE/32162519/vivo-mobile-phone.png",
+                "subcategories": [
+                    {
+                        "name": "Smartphones",
+                        "image": "https://www.itel-india.com/wp-content/uploads/2024/04/12-min-min.jpg"
+                    },
+                    {
+                        "name": "Feature Phones",
+                        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone15prohero-202309_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=1693086369818"
+                    }
+                ]
+            },
+            {
+                "name": "Laptops",
+                "image": "https://i.rtings.com/assets/pages/IxCXzynA/apple-laptop-lineup-20220825-3-medium.jpg?format=auto",
+                "subcategories": [
+                    {
+                        "name": "Gaming Laptops",
+                        "image": "https://contentstatic.techgig.com/photo/106927668/best-gaming-laptops-to-consider-in-2024.jpg?989012"
+                    },
+                    {
+                        "name": "Ultrabooks",
+                        "image": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/02/Best-Ultrabook.jpg"
+                    },
+                    {
+                        "name": "Notebooks",
+                        "image": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/14-7430-2in1-intel/general/notebook-inspiron-14-7430-silver-right-facing.png?fmt=png-alpha&wid=800&hei=620"
+                    }
+                ]
+            },
+            {
+                "name": "Cameras",
+                "image": "https://sharpi.in/wp-content/uploads/2022/06/1653353121_1708099.jpg"
+            },
+            {
+                "name": "Televisions",
+                "image": "https://5.imimg.com/data5/JS/HB/MY-20911920/led-televisions.jpg"
+            },
+            {
+                "name": "Accessories",
+                "image": "https://5.imimg.com/data5/SELLER/Default/2022/11/VO/CT/YY/163122041/men-fashion-accessories.jpg"
+            }
+        ]
+    },
+    {
+        "name": "Fashion",
+        "image": "https://marketplace.canva.com/EAFCbKLQ_LE/1/0/1600w/canva-white-black-minimalist-fashion-store-logo-FBKZMKJ8Vpw.jpg",
+        "subcategories": [
+            {
+                "name": "Men",
+                "image": "https://elizabetta.net/cdn/shop/articles/mens-handrolled-large-silk-pocket-square_600x.jpg?v=1692808561",
+                "subcategories": [
+                    {
+                        "name": "Top Wear",
+                        "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/8717979/2019/3/20/585db9fe-1df0-458d-b218-6f514eabb9601553068826233-Mast--Harbour-Men-Shirts-4141553068825026-1.jpg"
+                    },
+                    {
+                        "name": "Bottom Wear",
+                        "image": "https://www.tistabene.com/cdn/shop/articles/mens_bottomwear.png?v=1694584216",
+                        "subcategories": [
+                            {
+                                "name": "Jeans",
+                                "image": "https://assets.ajio.com/medias/sys_master/root/20230705/9hZ3/64a59403a9b42d15c93896e1/-473Wx593H-460698973-blue-MODEL.jpg"
+                            },
+                            {
+                                "name": "Trousers",
+                                "image": "https://www.aristobrat.in/cdn/shop/products/EliteTrouser_IceGrey_4.jpg?v=1677558862&width=2048"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ethnic Wear",
+                        "image": "https://shreeman.in/cdn/shop/products/1J8A2748.jpg?v=1675760776&width=3600"
+                    }
+                ]
+            },
+            {
+                "name": "Women's Wear",
+                "image": "https://img.freepik.com/free-vector/flat-design-clothing-store-logo-design_23-2149496428.jpg?size=338&ext=jpg&ga=GA1.1.1141335507.1719273600&semt=ais_user"
+            },
+            {
+                "name": "Kids' Wear",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeBo3LytlkPb6LNWgn73lpXz_MnrI0m18LWw&s"
+            },
+            {
+                "name": "Footwear",
+                "image": "https://images.moneycontrol.com/static-mcnews/2020/04/footwear-28042020.jpg?impolicy=website&width=1600&height=900"
+            },
+            {
+                "name": "Accessories",
+                "image": "https://cdn.shopify.com/s/files/1/0071/7406/2170/files/accessories-blog_1024x1024.jpg?v=1584702437"
+            }
+        ]
+    },
+    {
+        "name": "Home & Kitchen",
+        "image": "https://media.designcafe.com/wp-content/uploads/2021/05/26182848/indian-style-kitchen-interior-designs-for-your-home.jpg",
+        "subcategories": [
+            {
+                "name": "Furniture",
+                "image": "https://5.imimg.com/data5/SELLER/Default/2022/6/XG/PX/SB/58078843/office-furniture-interior-design-service.jpeg",
+                "subcategories": [
+                    {
+                        "name": "Sofas",
+                        "image": "https://5.imimg.com/data5/SELLER/Default/2022/6/XG/PX/SB/58078843/office-furniture-interior-design-service.jpeg"
+                    },
+                    {
+                        "name": "Beds",
+                        "image": "https://m.media-amazon.com/images/I/71IbO3DSAaL._AC_UF1000,1000_QL80_.jpg"
+                    },
+                    {
+                        "name": "Dining Tables",
+                        "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/dining-table/8/h/m/290-4-seater-340-foam-dining-table-utkarsh-450-honey-finish-original-imagmwggdzzzxcsv.jpeg?q=20&crop=false"
+                    }
+                ]
+            },
+            {
+                "name": "Kitchen Appliances",
+                "image": "https://cdn.firstcry.com/education/2023/01/13101355/Names-Of-Household-Appliances-In-English.jpg",
+                "subcategories": [
+                    {
+                        "name": "Microwaves",
+                        "image": "https://www.hindustantimes.com/ht-img/img/2023/12/11/550x309/oven_1702285600024_1702285613171.jpg"
+                    },
+                    {
+                        "name": "Refrigerators",
+                        "image": "https://images-cdn.ubuy.co.in/6530e4f253dd106eab5a2685-smeta-refrigerator-french-door-with-ice.jpg"
+                    },
+                    {
+                        "name": "Dishwashers",
+                        "image": "https://d1pjg4o0tbonat.cloudfront.net/content/dam/midea-aem/in/dishwashers/13place%20Dishwasher_3.webp"
+                    }
+                ]
+            },
+            {
+                "name": "Home Decor",
+                "image": "https://homafy.com/wp-content/uploads/2023/05/Modern-Home-Metal-Wall-Art.jpeg"
+            },
+            {
+                "name": "Gardening Tools",
+                "image": "https://m.media-amazon.com/images/I/614OgDfTCXL._AC_.jpg"
+            }
+        ]
+    },
+    {
+        "name": "Books",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmQs8xbIseku59onHMpZ6bQ3XaeaSjeLgzMQ&s",
+        "subcategories": [
+            {
+                "name": "Fiction",
+                "image": "https://m.media-amazon.com/images/I/715OLif4XoL._AC_UF1000,1000_QL80_.jpg",
+                "subcategories": [
+                    {
+                        "name": "Novels",
+                        "image": "https://m.media-amazon.com/images/I/51xwFZin4pL._AC_UF1000,1000_QL80_.jpg"
+                    },
+                    {
+                        "name": "Short Stories",
+                        "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/book/a/z/v/greatest-short-stories-for-children-original-imagy32fqzcqmnzz.jpeg?q=90&crop=false"
+                    },
+                    {
+                        "name": "Poetry",
+                        "image": "https://static.toiimg.com/photo/95854533.cms"
+                    }
+                ]
+            },
+            {
+                "name": "Non-Fiction",
+                "image": "https://s26162.pcdn.co/wp-content/uploads/2023/05/Nonfiction-preview.jpg",
+                "subcategories": [
+                    {
+                        "name": "Biographies",
+                        "image": "https://images-cdn.reedsy.com/discovery/post/17/featured_image/large_4776661e463298030274c2929f3ece3313153fe3.jpg"
+                    },
+                    {
+                        "name": "Self-Help",
+                        "image": "https://www.wellnessroadpsychology.com/wp-content/uploads/2024/05/Self-Help.jpg"
+                    },
+                    {
+                        "name": "Cookbooks",
+                        "image": "https://assets.bonappetit.com/photos/634da68f9ec65550bbe8e1ca/16:9/w_2560%2Cc_limit/20221014-DIGITAL-GIFT-GUIDE-18381-BOOKS%25201-FINAL.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Children's Books",
+                "image": "https://m.media-amazon.com/images/I/81M07-ZBy-L._AC_UF1000,1000_QL80_.jpg"
+            },
+            {
+                "name": "Comics",
+                "image": "https://cdn.kobo.com/book-images/00284104-af1d-45d4-88f5-2a96bfb462d9/353/569/90/False/history-of-comic-books.jpg"
+            }
+        ]
+    },
+    {
+        "name": "Sports & Outdoors",
+        "image": "https://www.merecyclers.com/wp-content/uploads/2021/01/MER-buying-used-outdoor-gear.jpg",
+        "subcategories": [
+            {
+                "name": "Fitness Equipment",
+                "image": "https://m.media-amazon.com/images/I/71xd8oVXDDL.jpg",
+                "subcategories": [
+                    {
+                        "name": "Treadmills",
+                        "image": "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_328,ar_328:426/dpr_1.5/cultgear-content/eN2PjmbBC7WfmghuDseiLRqY"
+                    },
+                    {
+                        "name": "Exercise Bikes",
+                        "image": "https://m.media-amazon.com/images/I/71PVBwDOTAL._AC_SL1500_.jpg"
+                    },
+                    {
+                        "name": "Dumbbells",
+                        "image": "https://www.mensjournal.com/.image/t_share/MTk2MTM2ODAwNDgyMjM5NjMz/db_main.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Outdoor Gear",
+                "image": "https://www.merecyclers.com/wp-content/uploads/2021/01/MER-buying-used-outdoor-gear.jpg",
+                "subcategories": [
+                    {
+                        "name": "Tents",
+                        "image": "https://images-cdn.ubuy.co.in/633ade4f254da1162e766c3d-pop-up-camping-tent-2-person-anngrowy.jpg"
+                    },
+                    {
+                        "name": "Backpacks",
+                        "image": "https://cdn.thewirecutter.com/wp-content/media/2022/09/backpacks-2048px.jpg?auto=webp&quality=75&crop=1.91:1&width=1200"
+                    },
+                    {
+                        "name": "Sleeping Bags",
+                        "image": "https://m.media-amazon.com/images/I/71-Qi5-sbrL._AC_UF350,350_QL80_.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Sports Apparel",
+                "image": "https://www.kreedon.com/wp-content/uploads/2023/01/recovery-sportswear-voguebus-may-22-inline-2.webp"
+            },
+            {
+                "name": "Footwear",
+                "image": "https://images.moneycontrol.com/static-mcnews/2020/04/footwear-28042020.jpg?impolicy=website&width=1600&height=900"
+            },
+            {
+                "name": "Accessories",
+                "image": "https://5.imimg.com/data5/SELLER/Default/2022/11/VO/CT/YY/163122041/men-fashion-accessories.jpg"
+            }
+        ]
+    }
+]
