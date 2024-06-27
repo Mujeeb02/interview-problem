@@ -1,16 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import data from './categories.json'; // Ensure the JSON file is in the src folder
 import ExpandableList from './ExpandableList';
+import { RenderProductsGrid } from './renderProductsGrid';
+import SubcategoryList from './subCategoriesList';
+import SearchResults from './SearchResults';
 
 const CategoriesViewer = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [hoveredCategory, setHoveredCategory] = useState(null);
   const [clickedCategory, setClickedCategory] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8; // Number of products per page
+  const itemsPerPage = 8;
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
+    setClickedCategory(null); // Reset clicked category when search term changes
   };
 
   const handleMouseEnter = (category) => {
@@ -23,7 +27,7 @@ const CategoriesViewer = () => {
 
   const handleClick = (category) => {
     setClickedCategory(category);
-    setCurrentPage(1); // Reset to first page when a new category is clicked
+    setCurrentPage(1);
   };
 
   const handlePageChange = (pageNumber) => {
@@ -68,23 +72,9 @@ const CategoriesViewer = () => {
   };
 
   const allProducts = extractAllProducts(data);
-  const displayedProducts = clickedCategory ? extractProducts(clickedCategory) : allProducts;
+  const displayedProducts = clickedCategory && !clickedCategory.subcategories ? extractProducts(clickedCategory) : allProducts;
   const totalPages = Math.ceil(displayedProducts.length / itemsPerPage);
   const paginatedProducts = displayedProducts.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-
-  const renderProductsGrid = (products) => {
-    return (
-      <div className="grid grid-cols-4 gap-4 mt-4">
-        {products.map((product, index) => (
-          <div key={index} className="border p-4 rounded-lg shadow hover:shadow-lg transition-shadow duration-200">
-            <img src={product.image} alt={product.name} className="w-full h-40 object-cover mb-2 rounded" />
-            <h3 className="text-lg font-medium">{product.name}</h3>
-            <p className="text-sm text-gray-500">{product.categoryType}</p>
-          </div>
-        ))}
-      </div>
-    );
-  };
 
   const renderPagination = () => {
     return (
@@ -102,6 +92,38 @@ const CategoriesViewer = () => {
     );
   };
 
+  const renderContent = () => {
+    if (searchTerm) {
+      return <SearchResults categories={filteredCategories} onCategoryClick={handleClick} handleMouseEnter={handleMouseEnter} handleMouseLeave={handleMouseLeave} hoveredCategory={hoveredCategory} />;
+    }
+    if (clickedCategory) {
+      if (clickedCategory.subcategories && clickedCategory.subcategories.length > 0) {
+        return (
+          <div className='flex flex-col gap-y-4'>
+            <h1 className='mt-4 ml-[45%] text-3xl font-bold text-black'>{clickedCategory.name}</h1>
+            <SubcategoryList category={clickedCategory} onCategoryClick={handleClick} />
+          </div>
+        );
+      } else {
+        return (
+          <>
+            <h2 className="text-2xl font-bold mt-8 mb-4 ml-[45%]">{clickedCategory.name} Products</h2>
+            {RenderProductsGrid(paginatedProducts)}
+            {renderPagination()}
+          </>
+        );
+      }
+    } else {
+      return (
+        <>
+          <h2 className="text-2xl font-bold mt-8 mb-4 ml-[45%]">All Products</h2>
+          {RenderProductsGrid(paginatedProducts)}
+          {renderPagination()}
+        </>
+      );
+    }
+  };
+
   return (
     <div className="p-4">
       <input
@@ -112,7 +134,7 @@ const CategoriesViewer = () => {
         className="w-full p-2 border border-gray-300 rounded-full mb-4"
       />
       <div className="flex gap-2">
-        {filteredCategories.map((category, index) => (
+        {!searchTerm && data.map((category, index) => (
           <div
             key={index}
             className="category-card border rounded-lg p-4 cursor-pointer hover:bg-gray-100"
@@ -126,9 +148,9 @@ const CategoriesViewer = () => {
               <div className="subcategories-popup">
                 {category.subcategories && category.subcategories.map((subcategory, subIndex) =>
                   typeof subcategory === 'object' ? (
-                    <ExpandableList key={subIndex} category={subcategory} />
+                    <ExpandableList key={subIndex} category={subcategory} onCategoryClick={handleClick} />
                   ) : (
-                    <div key={subIndex} className="p-2">
+                    <div key={subIndex} className="p-2 cursor-pointer hover:bg-gray-200" onClick={() => handleClick({ name: subcategory, subcategories: [] })}>
                       <h3 className="font-medium">{subcategory}</h3>
                     </div>
                   )
@@ -138,11 +160,7 @@ const CategoriesViewer = () => {
           </div>
         ))}
       </div>
-      <div>
-        <h2 className="text-2xl font-bold mt-8 mb-4 ml-[45%]">{clickedCategory ? clickedCategory.name : 'All'} Products</h2>
-        {renderProductsGrid(paginatedProducts)}
-        {renderPagination()}
-      </div>
+      <div>{renderContent()}</div>
     </div>
   );
 };

@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Collapse } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-const ExpandableList = ({ category }) => {
+const ExpandableList = ({ category, onCategoryClick }) => {
   const [expanded, setExpanded] = useState(false);
-
   return (
     <div className="mb-4">
       <div
@@ -12,16 +11,16 @@ const ExpandableList = ({ category }) => {
         onMouseEnter={() => setExpanded(true)}
         onMouseLeave={() => setExpanded(false)}
       >
-        <h2 className="text-lg font-bold">{category.name}</h2>
+        <h2 onClick={() => onCategoryClick(category)} className="text-lg font-bold">{category.name}</h2>
         <ExpandMoreIcon className={`transition-transform ${expanded ? 'rotate-180' : ''}`} />
       </div>
       <Collapse in={expanded}>
         <div className="ml-4">
           {category.subcategories && category.subcategories.map((subcategory, index) =>
             typeof subcategory === 'object' ? (
-              <ExpandableList key={index} category={subcategory} />
+              <ExpandableList key={index} category={subcategory} onCategoryClick={onCategoryClick} />
             ) : (
-              <div key={index} className="p-2">
+              <div onClick={() => onCategoryClick(subcategory)} key={index} className="p-2">
                 <h3 className="font-medium">{subcategory}</h3>
               </div>
             )
