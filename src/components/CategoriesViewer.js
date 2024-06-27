@@ -133,7 +133,8 @@ const CategoriesViewer = () => {
         onChange={handleSearchChange}
         className="w-full p-2 border border-gray-300 rounded-full mb-4"
       />
-      <div className="flex gap-2">
+      <h1 className='ml-[45%] text-3xl text-black font-bold'>Categories</h1>
+      <div className="flex gap-2 mt-4">
         {!searchTerm && data.map((category, index) => (
           <div
             key={index}
